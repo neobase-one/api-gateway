@@ -1,0 +1,31 @@
+{
+  "name": "canto-api-gateway",
+  "description": "Serverless GraphQL API Gateway using Apollo Lambda",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --write .",
+    "deploy": "serverless deploy",
+    "dev": "serverless offline"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.3.0",
+    "@as-integrations/aws-lambda": "^1.1.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.3",
+    "serverless": "^3.26.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.4",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
