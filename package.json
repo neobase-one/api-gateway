@@ -1,5 +1,5 @@
 {
-  "name": "canto-api-gateway",
+  "name": "neobase-graphql-api-gateway",
   "description": "Serverless GraphQL API Gateway using Apollo Lambda",
   "version": "1.0.0",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "dev": "serverless offline"
   },
   "dependencies": {
+    "@apollo/gateway": "^2.2.3",
     "@apollo/server": "^4.3.0",
     "@as-integrations/aws-lambda": "^1.1.0",
     "graphql": "^16.6.0"
